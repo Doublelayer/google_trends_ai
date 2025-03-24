@@ -48,8 +48,8 @@ def scrape_html(driver: Driver, data):
             logger.debug(trend_)
             trends.append(trend_)
 
-        if os.getenv("RUNNING_PROFILE") == "dev" and len(trends) >= 3:
-            logger.debug(f"running profile is {os.getenv("RUNNING_PROFILE")} therefore 3 trends should be enough")
+        if os.getenv("RUNNING_PROFILE") is "dev" and len(trends) >= 3:
+            logger.debug(f"running profile is {os.getenv('RUNNING_PROFILE')} therefore 3 trends should be enough")
             return trends
     return trends
 
