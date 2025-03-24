@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "dockerfilePath": "./Dockerfile",
+  "appName": "google_trends_ai",
+  "volumes": {
+    "/root/projects/common/database": "/app/data"
+  }
+}
